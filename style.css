@@ -1,0 +1,61 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: black;
+    margin: 0;
+}
+
+h1 {
+    font-family: "Abril Fatface", serif;
+    color: #fff;
+    font-size: 4rem;
+    text-align: center;
+}
+
+.glow {
+    color: #ff66b2; /* Pink color for the text */
+    text-shadow: 0 0 10px rgba(255, 102, 178, 0.8), 0 0 20px rgba(255, 102, 178, 0.6), 
+                 0 0 40px rgba(255, 102, 178, 0.4), 0 0 60px rgba(255, 102, 178, 0.2);
+    animation: glow 1.5s infinite alternate;
+}
+
+@keyframes glow {
+    from {
+        text-shadow: 0 0 10px rgba(255, 102, 178, 0.8), 0 0 20px rgba(255, 102, 178, 0.6), 
+                     0 0 40px rgba(255, 102, 178, 0.4), 0 0 60px rgba(255, 102, 178, 0.2);
+    }
+    to {
+        text-shadow: 0 0 20px rgba(255, 51, 153, 1), 0 0 30px rgba(255, 51, 153, 0.9), 
+                     0 0 50px rgba(255, 51, 153, 0.7), 0 0 80px rgba(255, 51, 153, 0.5);
+    }
+}
+
+p {
+    color: white;
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+.center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+a {
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: #ff66b2; /* Pink color */
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+}
+
+a:hover {
+    background-color: #ff3399; /* Darker pink on hover */
+}
